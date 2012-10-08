@@ -17372,19 +17372,17 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <wire x1="487.68" y1="81.28" x2="469.9" y2="81.28" width="0.1524" layer="91"/>
 <label x="469.9" y="81.28" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="1" pin="ADC7"/>
+<wire x1="416.56" y1="139.7" x2="419.1" y2="139.7" width="0.1524" layer="91"/>
+<label x="419.1" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="IC2" gate="1" pin="ADC6"/>
 <wire x1="416.56" y1="142.24" x2="419.1" y2="142.24" width="0.1524" layer="91"/>
 <label x="419.1" y="142.24" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="IC2" gate="1" pin="ADC7"/>
-<wire x1="416.56" y1="139.7" x2="419.1" y2="139.7" width="0.1524" layer="91"/>
-<label x="419.1" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$22" class="0">
