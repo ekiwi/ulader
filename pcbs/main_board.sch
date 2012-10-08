@@ -14688,6 +14688,47 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pin name="6" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="4" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="MOSFET-NCHANNEL-8PORT">
+<wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-2.0066" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="0" x2="-0.762" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0.508" x2="-2.032" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="0.254" x2="-1.778" y2="0" width="0.3048" layer="94"/>
+<wire x1="-1.778" y1="0" x2="-0.889" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="-0.889" y1="-0.254" x2="-0.889" y2="0" width="0.3048" layer="94"/>
+<wire x1="-0.889" y1="0" x2="-1.143" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="1.905" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="3.175" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-0.635" x2="2.54" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.762" x2="2.54" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="3.175" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0.762" x2="3.429" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.762" x2="1.651" y2="0.508" width="0.1524" layer="94"/>
+<circle x="0" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="1.905" radius="0.127" width="0.4064" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="2.54" size="0.8128" layer="93">D</text>
+<text x="-1.27" y="-3.556" size="0.8128" layer="93">S</text>
+<text x="-5.08" y="-1.27" size="0.8128" layer="93">G</text>
+<rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="-1.27" layer="94"/>
+<rectangle x1="-2.794" y1="1.27" x2="-2.032" y2="2.54" layer="94"/>
+<rectangle x1="-2.794" y1="-0.889" x2="-2.032" y2="0.889" layer="94"/>
+<pin name="G" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<pin name="D1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TPS71530">
@@ -14764,6 +14805,23 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRF7413">
+<gates>
+<gate name="G$1" symbol="MOSFET-NCHANNEL-8PORT" x="2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SO8-2">
+<connects>
+<connect gate="G$1" pin="D1" pad="5 6 7 8"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S1" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15515,6 +15573,12 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <part name="P+11" library="supply1" deviceset="+12V" device=""/>
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="R19" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="P+13" library="supply1" deviceset="+12V" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="R20" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
+<part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="U$4" library="ShortCircuitRobotics" deviceset="IRF7413" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15525,6 +15589,7 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <text x="60.96" y="78.74" size="1.778" layer="97">1,315 Ohm</text>
 <text x="381" y="50.8" size="1.778" layer="97">from accumulator</text>
 <text x="284.48" y="78.74" size="1.778" layer="97">to rear speed sensor</text>
+<text x="492.76" y="48.26" size="1.778" layer="97">12V output</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="58.42" y="119.38" rot="R90"/>
@@ -15610,6 +15675,12 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <instance part="P+11" gate="1" x="132.08" y="58.42" rot="MR270"/>
 <instance part="P+12" gate="VCC" x="436.88" y="81.28" rot="MR270"/>
 <instance part="R19" gate="G$1" x="452.12" y="81.28"/>
+<instance part="JP6" gate="G$1" x="502.92" y="38.1"/>
+<instance part="P+13" gate="1" x="492.76" y="40.64" rot="MR270"/>
+<instance part="GND14" gate="1" x="472.44" y="38.1" rot="R270"/>
+<instance part="R20" gate="G$1" x="477.52" y="33.02" rot="R90"/>
+<instance part="R21" gate="G$1" x="469.9" y="25.4"/>
+<instance part="U$4" gate="G$1" x="485.14" y="38.1" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -15821,6 +15892,14 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="172.72" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="S1"/>
+<wire x1="480.06" y1="38.1" x2="477.52" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="477.52" y1="38.1" x2="474.98" y2="38.1" width="0.1524" layer="91"/>
+<junction x="477.52" y="38.1"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -15893,6 +15972,11 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
 <wire x1="134.62" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="P+13" gate="1" pin="+12V"/>
+<wire x1="495.3" y1="40.64" x2="500.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -16333,6 +16417,37 @@ In short: You are welcome to use (and extend) this library, but extensions must 
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <label x="137.16" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="D1"/>
+<wire x1="490.22" y1="38.1" x2="500.38" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="474.98" y1="25.4" x2="477.52" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="25.4" x2="477.52" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="G"/>
+<wire x1="477.52" y1="25.4" x2="485.14" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="485.14" y1="25.4" x2="485.14" y2="30.48" width="0.1524" layer="91"/>
+<junction x="477.52" y="25.4"/>
+</segment>
+</net>
+<net name="12V_OUT_ON" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="464.82" y1="25.4" x2="459.74" y2="25.4" width="0.1524" layer="91"/>
+<label x="459.74" y="25.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="1" pin="PD7(AIN1/PCINT23)"/>
+<wire x1="416.56" y1="116.84" x2="419.1" y2="116.84" width="0.1524" layer="91"/>
+<label x="419.1" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
