@@ -18,6 +18,13 @@ control switches
 (dimmable), photo transistor
 * 2x Rotation Sensor: front and back
 
+## Optional/Future Features ##
+* White LED(s) underneath the saddle that can be turned on to find your locks
+keyhole
+* Pressure Sensor underneath/in the saddle to detect if someone is riding the
+bike
+* Turn signals on front and back
+
 ### Main Board ###
 
 The main board contains the circuit that converts the power from the bike
