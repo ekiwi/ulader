@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -140,6 +140,11 @@
 <wire x1="34" y1="0" x2="34" y2="30" width="0" layer="20"/>
 <wire x1="34" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
+<text x="16.75" y="25" size="1.016" layer="25">eKiwi</text>
+<text x="2.5" y="28.25" size="1.016" layer="25" rot="R270">uLader/FrontLight</text>
+<text x="2" y="25.75" size="1.016" layer="25" rot="R90">v0.1</text>
+<text x="32.25" y="26.25" size="1.016" layer="26" rot="MR0">https://github.com/ekiwi/ulader</text>
+<text x="32.25" y="27.75" size="1.016" layer="26" rot="MR0">https://github.com/roboterclubaachen/xpcc</text>
 </plain>
 <libraries>
 <library name="ltc_swr">
@@ -1733,6 +1738,40 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="1.8542" y1="0.127" x2="1.6256" y2="0.7112" width="0.1524" layer="21"/>
 <wire x1="1.2192" y1="0.7112" x2="1.6256" y2="0.7112" width="0.1524" layer="21" curve="-306.869898"/>
 </package>
+<package name="OSHW_10X350_NOTEXT">
+<wire x1="4.2418" y1="2.5146" x2="3.4036" y2="0.4826" width="0.254" layer="21"/>
+<wire x1="3.4036" y1="0.4826" x2="2.9464" y2="0.7366" width="0.254" layer="21"/>
+<wire x1="2.9464" y1="0.7366" x2="1.8796" y2="0" width="0.254" layer="21"/>
+<wire x1="1.8796" y1="0" x2="1.0414" y2="0.8382" width="0.254" layer="21"/>
+<wire x1="1.0414" y1="0.8382" x2="1.8034" y2="1.9304" width="0.254" layer="21"/>
+<wire x1="1.3208" y1="3.0988" x2="0" y2="3.3528" width="0.254" layer="21"/>
+<wire x1="0" y1="3.3528" x2="0" y2="4.4958" width="0.254" layer="21"/>
+<wire x1="0" y1="4.4958" x2="1.3462" y2="4.7498" width="0.254" layer="21"/>
+<wire x1="1.8288" y1="5.8674" x2="1.0414" y2="7.0104" width="0.254" layer="21"/>
+<wire x1="1.0414" y1="7.0104" x2="1.8796" y2="7.8232" width="0.254" layer="21"/>
+<wire x1="1.8796" y1="7.8232" x2="3.0226" y2="7.0358" width="0.254" layer="21"/>
+<wire x1="4.1148" y1="7.493" x2="4.3688" y2="8.8646" width="0.254" layer="21"/>
+<wire x1="4.3688" y1="8.8646" x2="5.5372" y2="8.8646" width="0.254" layer="21"/>
+<wire x1="5.5372" y1="8.8646" x2="5.7912" y2="7.493" width="0.254" layer="21"/>
+<wire x1="6.8834" y1="7.0358" x2="8.0518" y2="7.8232" width="0.254" layer="21"/>
+<wire x1="8.0518" y1="7.8232" x2="8.8646" y2="7.0104" width="0.254" layer="21"/>
+<wire x1="8.8646" y1="7.0104" x2="8.0772" y2="5.8674" width="0.254" layer="21"/>
+<wire x1="8.5598" y1="4.7498" x2="9.906" y2="4.4958" width="0.254" layer="21"/>
+<wire x1="9.906" y1="4.4958" x2="9.906" y2="3.3528" width="0.254" layer="21"/>
+<wire x1="9.906" y1="3.3528" x2="8.5852" y2="3.0988" width="0.254" layer="21"/>
+<wire x1="8.128" y1="1.9304" x2="8.8646" y2="0.8382" width="0.254" layer="21"/>
+<wire x1="8.8646" y1="0.8382" x2="8.0518" y2="0.0254" width="0.254" layer="21"/>
+<wire x1="8.0518" y1="0.0254" x2="6.985" y2="0.7366" width="0.254" layer="21"/>
+<wire x1="6.985" y1="0.7366" x2="6.5278" y2="0.4826" width="0.254" layer="21"/>
+<wire x1="6.5278" y1="0.4826" x2="5.6896" y2="2.5146" width="0.254" layer="21"/>
+<wire x1="1.8034" y1="1.9304" x2="1.3462" y2="3.0988" width="0.254" layer="21" curve="-19.550442"/>
+<wire x1="1.3462" y1="4.7498" x2="1.8288" y2="5.8674" width="0.254" layer="21" curve="-18.924644"/>
+<wire x1="3.0226" y1="7.0358" x2="4.1148" y2="7.4676" width="0.254" layer="21" curve="-18.163939"/>
+<wire x1="5.7912" y1="7.4676" x2="6.858" y2="7.0358" width="0.254" layer="21" curve="-17.87913"/>
+<wire x1="8.0772" y1="5.8674" x2="8.5598" y2="4.7498" width="0.254" layer="21" curve="-18.854515"/>
+<wire x1="8.5852" y1="3.0988" x2="8.128" y2="1.9304" width="0.254" layer="21" curve="-19.550442"/>
+<wire x1="4.2418" y1="2.5146" x2="5.6896" y2="2.5146" width="0.254" layer="21" curve="-303.462974"/>
+</package>
 </packages>
 </library>
 <library name="bookla">
@@ -1956,54 +1995,159 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="ltc_swr" package="TSSOP16_BA" value="LT3474" x="10.25" y="21.75"/>
-<element name="L2" library="inductors" package="DR74" value="DR74" x="12.75" y="11.5"/>
-<element name="D3" library="Brunner" package="MELF-MLL41" value="LL5819" x="6.75" y="9.75" rot="R270"/>
-<element name="R1" library="resistor" package="R0603" value="52.3k" x="14" y="23.75" rot="R90"/>
-<element name="C1" library="resistor" package="C0805" value="2.2u" x="4.25" y="11.75" rot="R270"/>
-<element name="C2" library="resistor" package="C0805" value="2.2u" x="14" y="19.25" rot="R90"/>
+<element name="IC1" library="ltc_swr" package="TSSOP16_BA" value="LT3474" x="10.25" y="21.75" smashed="yes">
+<attribute name="NAME" x="7" y="19.65" size="1.27" layer="25" font="vector" rot="R90"/>
+</element>
+<element name="L2" library="inductors" package="DR74" value="DR74" x="12.75" y="11.5" smashed="yes">
+<attribute name="NAME" x="12.25" y="11.25" size="1.27" layer="25"/>
+<attribute name="VALUE" x="9.25" y="6" size="1.27" layer="27"/>
+</element>
+<element name="D3" library="Brunner" package="MELF-MLL41" value="LL5819" x="6.75" y="9.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.474" y="16.163" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="3.756" y="12.413" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R1" library="resistor" package="R0603" value="52.3k" x="14" y="23.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.111" y="24.861" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="16.032" y="22.861" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="resistor" package="C0805" value="2.2u" x="4.25" y="11.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.516" y="15.889" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="1.964" y="12.639" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C2" library="resistor" package="C0805" value="2.2u" x="14" y="19.25" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.734" y="20.611" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="16.286" y="18.361" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="C3" library="resistor" package="C0603" value="220n" x="11.75" y="16.25" rot="R180"/>
-<element name="C4" library="resistor" package="C0603" value="3.3n" x="13.25" y="27.75" rot="R90"/>
-<element name="C5" library="resistor" package="C0603" value="100n" x="7.75" y="28.25" rot="R180"/>
-<element name="R2" library="resistor" package="R0603" value="52.3k" x="10.75" y="28.25"/>
-<element name="ANODE" library="testpad" package="TP20SQ" value="TPTP20SQ" x="1" y="13.5">
-<attribute name="TP_SIGNAL_NAME" value="" x="30.21" y="-20.79" size="1.778" layer="27" display="off"/>
+<element name="C4" library="resistor" package="C0603" value="3.3n" x="13.25" y="27.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.238" y="27.111" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="15.282" y="26.861" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CATHODE" library="testpad" package="TP20SQ" value="TPTP20SQ" x="1" y="19.75">
-<attribute name="TP_SIGNAL_NAME" value="" x="22.59" y="-14.54" size="1.778" layer="27" display="off"/>
+<element name="C5" library="resistor" package="C0603" value="100n" x="7.75" y="28.25" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.639" y="28.988" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="8.639" y="30.282" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U$4" library="irf-2" package="SO8-2" value="IRF7103" x="4.2418" y="20.9992" rot="MR0"/>
-<element name="R3" library="resistor" package="R0603" value="33" x="2" y="15.25" rot="MR0"/>
-<element name="R4" library="resistor" package="R0603" value="100k" x="2" y="16.75" rot="MR0"/>
-<element name="R5" library="resistor" package="R0603" value="10k" x="10.5" y="26.25"/>
-<element name="R6" library="resistor" package="R0603" value="20k" x="7.75" y="26.5"/>
-<element name="IC2" library="ltc_swr" package="TSSOP16_BA" value="LT3474" x="27.25" y="21.75"/>
-<element name="L1" library="inductors" package="DR74" value="DR74" x="29.5" y="11.75"/>
-<element name="D1" library="Brunner" package="MELF-MLL41" value="LL5819" x="23.75" y="10.25" rot="R270"/>
-<element name="R7" library="resistor" package="R0603" value="52.3k" x="31" y="23.75" rot="R90"/>
-<element name="C6" library="resistor" package="C0805" value="2.2u" x="21.25" y="12.25" rot="R270"/>
-<element name="C7" library="resistor" package="C0805" value="2.2u" x="31" y="19.5" rot="R90"/>
+<element name="R2" library="resistor" package="R0603" value="52.3k" x="10.75" y="28.25" smashed="yes">
+<attribute name="NAME" x="10.111" y="28.639" size="1.27" layer="25"/>
+<attribute name="VALUE" x="9.861" y="26.218" size="1.27" layer="27"/>
+</element>
+<element name="+_D" library="testpad" package="TP20SQ" value="TPTP20SQ" x="1" y="13.5" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="1" y="10.96" size="1" layer="37"/>
+<attribute name="NAME" x="1.5" y="15.05" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="-0.016" y="12.357" size="0.0254" layer="27"/>
+</element>
+<element name="-_D" library="testpad" package="TP20SQ" value="TPTP20SQ" x="1" y="19.75" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="1" y="17.21" size="1" layer="37"/>
+<attribute name="NAME" x="1.75" y="21.55" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="-0.016" y="18.607" size="0.0254" layer="27"/>
+</element>
+<element name="IRF7103" library="irf-2" package="SO8-2" value="IRF7103" x="4.2418" y="20.9992" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.9558" y="21.07" size="1.27" layer="26" font="vector" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="1.9558" y="19.0942" size="1.27" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="R3" library="resistor" package="R0603" value="33" x="2" y="15.25" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.639" y="13.139" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="2.889" y="13.218" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R4" library="resistor" package="R0603" value="100k" x="2" y="16.75" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.639" y="17.889" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="2.889" y="14.718" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R5" library="resistor" package="R0603" value="10k" x="10.5" y="26.25" smashed="yes">
+<attribute name="NAME" x="9.361" y="24.389" size="1.27" layer="25"/>
+<attribute name="VALUE" x="9.611" y="24.218" size="1.27" layer="27"/>
+</element>
+<element name="R6" library="resistor" package="R0603" value="20k" x="7.75" y="26.5" smashed="yes">
+<attribute name="NAME" x="4.611" y="26.139" size="1.27" layer="25"/>
+<attribute name="VALUE" x="6.861" y="24.468" size="1.27" layer="27"/>
+</element>
+<element name="IC2" library="ltc_swr" package="TSSOP16_BA" value="LT3474" x="27.25" y="21.75" smashed="yes">
+<attribute name="NAME" x="24.25" y="20.65" size="1.27" layer="25" font="vector" rot="R90"/>
+</element>
+<element name="L1" library="inductors" package="DR74" value="DR74" x="29.5" y="11.75" smashed="yes">
+<attribute name="NAME" x="28.75" y="10.5" size="1.27" layer="25"/>
+<attribute name="VALUE" x="26" y="6.25" size="1.27" layer="27"/>
+</element>
+<element name="D1" library="Brunner" package="MELF-MLL41" value="LL5819" x="23.75" y="10.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.724" y="7.913" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="20.756" y="12.913" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R7" library="resistor" package="R0603" value="52.3k" x="31" y="23.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.111" y="23.111" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="33.032" y="22.861" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C6" library="resistor" package="C0805" value="2.2u" x="21.25" y="12.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.766" y="16.139" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="18.964" y="13.139" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C7" library="resistor" package="C0805" value="2.2u" x="31" y="19.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.234" y="19.361" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="33.286" y="18.611" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="C8" library="resistor" package="C0603" value="220n" x="28.75" y="16.5" rot="R180"/>
-<element name="C9" library="resistor" package="C0603" value="3.3n" x="30.25" y="27.75" rot="R90"/>
-<element name="C10" library="resistor" package="C0603" value="100n" x="24.75" y="28.5" rot="R180"/>
-<element name="R8" library="resistor" package="R0603" value="52.3k" x="27.75" y="28.5"/>
-<element name="ANODE1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="22" y="29">
-<attribute name="TP_SIGNAL_NAME" value="" x="-7.21" y="12.49" size="1.778" layer="27" display="off"/>
+<element name="C9" library="resistor" package="C0603" value="3.3n" x="30.25" y="27.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.238" y="27.111" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="32.282" y="26.861" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CATHODE1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="18" y="29">
-<attribute name="TP_SIGNAL_NAME" value="" x="0.22" y="7.41" size="1.778" layer="27" display="off"/>
+<element name="C10" library="resistor" package="C0603" value="100n" x="24.75" y="28.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.139" y="27.988" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="25.639" y="30.532" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R9" library="resistor" package="R0603" value="33" x="5.5" y="15.25" rot="MR0"/>
-<element name="R10" library="resistor" package="R0603" value="100k" x="5.5" y="16.75" rot="MR0"/>
-<element name="R11" library="resistor" package="R0603" value="10k" x="27.5" y="26.5" rot="R180"/>
-<element name="R12" library="resistor" package="R0603" value="20k" x="24.75" y="26.5"/>
-<element name="IC3" library="attiny24_44_84" package="SOIC14" value="ATTINY24/44/84-SSU" x="10.75" y="8.75" rot="MR180"/>
-<element name="U$1" library="ShortCircuitRobotics" package="SOT23-DBV" value="TPS71530" x="21" y="10.5" rot="MR180"/>
+<element name="R8" library="resistor" package="R0603" value="52.3k" x="27.75" y="28.5" smashed="yes">
+<attribute name="NAME" x="26.861" y="29.389" size="1.27" layer="25"/>
+<attribute name="VALUE" x="26.861" y="26.468" size="1.27" layer="27"/>
+</element>
+<element name="+_B" library="testpad" package="TP20SQ" value="TPTP20SQ" x="22" y="29" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="22" y="26.46" size="1" layer="37"/>
+<attribute name="NAME" x="19.5" y="28.55" size="1.27" layer="25"/>
+<attribute name="VALUE" x="20.984" y="27.857" size="0.0254" layer="27"/>
+</element>
+<element name="-_B" library="testpad" package="TP20SQ" value="TPTP20SQ" x="18" y="29" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="18" y="26.46" size="1" layer="37"/>
+<attribute name="NAME" x="15.5" y="28.55" size="1.27" layer="25"/>
+<attribute name="VALUE" x="16.984" y="27.857" size="0.0254" layer="27"/>
+</element>
+<element name="R9" library="resistor" package="R0603" value="33" x="5.5" y="15.25" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.639" y="14.889" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="6.389" y="13.218" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R10" library="resistor" package="R0603" value="100k" x="5.5" y="16.75" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.389" y="16.639" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="6.389" y="14.718" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R11" library="resistor" package="R0603" value="10k" x="27.5" y="26.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.139" y="25.611" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="28.389" y="28.532" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R12" library="resistor" package="R0603" value="20k" x="24.75" y="26.5" smashed="yes">
+<attribute name="NAME" x="21.861" y="24.639" size="1.27" layer="25"/>
+<attribute name="VALUE" x="23.861" y="24.468" size="1.27" layer="27"/>
+</element>
+<element name="IC3" library="attiny24_44_84" package="SOIC14" value="ATTINY24/44/84-SSU" x="10.75" y="8.75" smashed="yes" rot="MR180">
+<attribute name="NAME" x="10.9915" y="9.532" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="VALUE" x="8.21" y="9.4485" size="1.27" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="U$1" library="ShortCircuitRobotics" package="SOT23-DBV" value="TPS71530" x="21" y="10.5" smashed="yes" rot="MR180">
+<attribute name="NAME" x="19.845" y="13.845" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="19.095" y="13.929" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="C11" library="resistor" package="C0603" value="100n" x="29" y="7" rot="MR180"/>
-<element name="C14" library="resistor" package="C0603" value="100n" x="5.75" y="9" rot="MR270"/>
-<element name="LED1" library="led" package="CHIPLED_0603" value="" x="18.9872" y="11.4956" rot="R180"/>
-<element name="R13" library="resistor" package="R0603" value="" x="17.4778" y="8.4768" rot="MR90"/>
-<element name="R14" library="resistor" package="R0603" value="" x="21" y="6.5" rot="MR90"/>
+<element name="C14" library="resistor" package="C0603" value="100n" x="5.75" y="9" smashed="yes" rot="MR270">
+<attribute name="NAME" x="4.988" y="10.389" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="7.782" y="9.889" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="LED1" library="led" package="CHIPLED_0603" value="" x="18.9872" y="11.4956" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.3722" y="17.2656" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="17.0822" y="12.7656" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R13" library="resistor" package="R0603" value="" x="17.4778" y="8.4768" smashed="yes" rot="MR90">
+<attribute name="NAME" x="15.6168" y="7.0878" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="15.4458" y="7.5878" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R14" library="resistor" package="R0603" value="" x="21" y="6.5" smashed="yes" rot="MR90">
+<attribute name="NAME" x="21.889" y="4.611" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="18.968" y="5.611" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="C13" library="resistor" package="PANASONIC_E" value="100u" x="28" y="10.75" rot="MR0"/>
 <element name="LIGHT" library="con-molex" package="6410-02" value="22-27-2021-02" x="21.25" y="2.5">
 <attribute name="OC_NEWARK" value="unknown" x="21.25" y="2.5" size="1.778" layer="27" display="off"/>
@@ -2011,14 +2155,14 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="21.25" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="21.25" y="2.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="con-molex" package="6410-04" value="22-27-2041-04" x="12.75" y="2.5">
+<element name="FRONT_LIGHT" library="con-molex" package="6410-04" value="22-27-2041-04" x="12.75" y="2.5">
 <attribute name="OC_NEWARK" value="unknown" x="12.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="12.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="12.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="12.75" y="2.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="H1" library="holes" package="3,0" value="MOUNT-HOLE3.0" x="19" y="21.25"/>
-<element name="LOGO1" library="ea" package="OSHW_6X100_NOTEXT" value="OSHW_LOGO_6MILX0100-NT" x="-8" y="-2.75"/>
+<element name="LOGO1" library="ea" package="OSHW_6X100_NOTEXT" value="OSHW_LOGO_6MILX0100-NT" x="4.5" y="22.75"/>
 <element name="U$2" library="bookla" package="ISP_RM2_00_STRAIGHT" value="ISP_SPECIALS" x="-0.0012" y="8" rot="R90"/>
 <element name="J1" library="con-amp" package="1X2MTA" value="" x="29" y="3.75" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="39.25" y="-10" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2026,12 +2170,13 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="39.25" y="-10" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="39.25" y="-10" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="SPEED_SENSOR" library="con-molex" package="6410-02" value="22-27-2021-02" x="4.75" y="2.5">
+<element name="SPEED" library="con-molex" package="6410-02" value="22-27-2021-02" x="4.75" y="2.5">
 <attribute name="OC_NEWARK" value="unknown" x="4.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="4.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="4.75" y="2.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="4.75" y="2.5" size="1.778" layer="27" display="off"/>
 </element>
+<element name="LOGO2" library="ea" package="OSHW_10X350_NOTEXT" value="OSHW_LOGO_10MILX0350-NT" x="32.75" y="16.25" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2044,7 +2189,7 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C4" pad="2"/>
-<contactref element="U$4" pad="3"/>
+<contactref element="IRF7103" pad="3"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="IC2" pad="8"/>
@@ -2059,7 +2204,7 @@ design rules under a new name.</description>
 <contactref element="C9" pad="2"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R12" pad="1"/>
-<contactref element="U$4" pad="1"/>
+<contactref element="IRF7103" pad="1"/>
 <contactref element="IC3" pad="14"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$1" pad="2"/>
@@ -2068,7 +2213,7 @@ design rules under a new name.</description>
 <contactref element="LED1" pad="C"/>
 <contactref element="C13" pad="-"/>
 <contactref element="LIGHT" pad="2"/>
-<contactref element="J2" pad="4"/>
+<contactref element="FRONT_LIGHT" pad="4"/>
 <wire x1="8.625" y1="24.525" x2="8.595" y2="23.535" width="0.4064" layer="1"/>
 <wire x1="8.595" y1="23.535" x2="9.2891625" y2="22.786309375" width="0.4064" layer="1"/>
 <wire x1="9.2891625" y1="22.786309375" x2="10.25" y2="21.75" width="0.4064" layer="1"/>
@@ -2202,7 +2347,7 @@ design rules under a new name.</description>
 <wire x1="6.7818" y1="17.1818" x2="6.7818" y2="18.4592" width="0.4064" layer="16"/>
 <wire x1="19.98" y1="2.5" x2="19.98" y2="7.105" width="0.4064" layer="1"/>
 <wire x1="19.98" y1="7.105" x2="20.25" y2="7.125" width="0.4064" layer="1"/>
-<contactref element="SPEED_SENSOR" pad="2"/>
+<contactref element="SPEED" pad="2"/>
 <wire x1="8.94" y1="2.5" x2="8.94" y2="1.44" width="0.4064" layer="16"/>
 <wire x1="8.94" y1="1.44" x2="8.25" y2="0.5" width="0.4064" layer="16"/>
 <wire x1="8.25" y1="0.5" x2="4.25" y2="0.5" width="0.4064" layer="16"/>
@@ -2372,7 +2517,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$8">
 <contactref element="IC1" pad="3"/>
-<contactref element="ANODE" pad="TP"/>
+<contactref element="+_D" pad="TP"/>
 <wire x1="8" y1="16.25" x2="5.75" y2="16.25" width="0.4064" layer="1"/>
 <wire x1="5.75" y1="16.25" x2="3" y2="13.5" width="0.4064" layer="1"/>
 <wire x1="3" y1="13.5" x2="1" y2="13.5" width="0.4064" layer="1"/>
@@ -2380,9 +2525,9 @@ design rules under a new name.</description>
 <wire x1="9.275" y1="17.525" x2="8" y2="16.25" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="U$4" pad="6"/>
-<contactref element="U$4" pad="5"/>
-<contactref element="CATHODE" pad="TP"/>
+<contactref element="IRF7103" pad="6"/>
+<contactref element="IRF7103" pad="5"/>
+<contactref element="-_D" pad="TP"/>
 <wire x1="4.2418" y1="24.8092" x2="3.75" y2="24.8092" width="0.8128" layer="16"/>
 <wire x1="3.75" y1="24.8092" x2="2.9718" y2="24.8092" width="0.8128" layer="16"/>
 <wire x1="1" y1="19.75" x2="1" y2="21.5" width="0.8128" layer="1"/>
@@ -2392,7 +2537,7 @@ design rules under a new name.</description>
 <wire x1="3.75" y1="24.25" x2="3.75" y2="24.8092" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$10">
-<contactref element="U$4" pad="4"/>
+<contactref element="IRF7103" pad="4"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="R3" pad="2"/>
@@ -2495,7 +2640,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$19">
 <contactref element="IC2" pad="3"/>
-<contactref element="ANODE1" pad="TP"/>
+<contactref element="+_B" pad="TP"/>
 <wire x1="26.275" y1="18.975" x2="26.275" y2="17.275" width="0.4064" layer="1"/>
 <wire x1="26.275" y1="17.275" x2="25.5" y2="16.5" width="0.4064" layer="1"/>
 <wire x1="25.5" y1="16.5" x2="24.25" y2="16.5" width="0.4064" layer="1"/>
@@ -2507,9 +2652,9 @@ design rules under a new name.</description>
 <wire x1="23.75" y1="16.5" x2="24.25" y2="16.5" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$20">
-<contactref element="CATHODE1" pad="TP"/>
-<contactref element="U$4" pad="8"/>
-<contactref element="U$4" pad="7"/>
+<contactref element="-_B" pad="TP"/>
+<contactref element="IRF7103" pad="8"/>
+<contactref element="IRF7103" pad="7"/>
 <wire x1="6.7818" y1="24.8092" x2="6.25" y2="24.8092" width="0.8128" layer="16"/>
 <wire x1="6.25" y1="24.8092" x2="5.5118" y2="24.8092" width="0.8128" layer="16"/>
 <wire x1="18" y1="29" x2="16.75" y2="27.75" width="0.8128" layer="1"/>
@@ -2522,7 +2667,7 @@ design rules under a new name.</description>
 <contactref element="R10" pad="2"/>
 <contactref element="R9" pad="2"/>
 <contactref element="R9" pad="2"/>
-<contactref element="U$4" pad="2"/>
+<contactref element="IRF7103" pad="2"/>
 <wire x1="4.65" y1="16.75" x2="4.65" y2="15.25" width="0.4064" layer="16"/>
 <wire x1="4.65" y1="16.75" x2="5.5118" y2="17.6118" width="0.4064" layer="16"/>
 <wire x1="5.5118" y1="17.6118" x2="5.5118" y2="18.4592" width="0.4064" layer="16"/>
@@ -2602,7 +2747,7 @@ design rules under a new name.</description>
 <wire x1="3.5" y1="17.25" x2="5.25" y2="19" width="0.4064" layer="1"/>
 </signal>
 <signal name="DI">
-<contactref element="J2" pad="3"/>
+<contactref element="FRONT_LIGHT" pad="3"/>
 <contactref element="U$2" pad="MOSI"/>
 <contactref element="IC3" pad="7"/>
 <wire x1="14.56" y1="11.3535" x2="14.56" y2="9.31" width="0.3048" layer="16"/>
@@ -2622,7 +2767,7 @@ design rules under a new name.</description>
 <wire x1="2.5" y1="7" x2="1.375" y2="8.125" width="0.4064" layer="16"/>
 </signal>
 <signal name="DO">
-<contactref element="J2" pad="2"/>
+<contactref element="FRONT_LIGHT" pad="2"/>
 <contactref element="U$2" pad="RESET"/>
 <contactref element="IC3" pad="8"/>
 <wire x1="8.5" y1="5.5" x2="9.1465" y2="6.1465" width="0.254" layer="1"/>
@@ -2666,7 +2811,7 @@ design rules under a new name.</description>
 <wire x1="17.4778" y1="11.4778" x2="18" y2="12" width="0.4064" layer="16"/>
 </signal>
 <signal name="WAKE_UP">
-<contactref element="J2" pad="1"/>
+<contactref element="FRONT_LIGHT" pad="1"/>
 <contactref element="IC3" pad="11"/>
 <wire x1="16.56" y1="2.5" x2="16.56" y2="6.94" width="0.4064" layer="16"/>
 <wire x1="16.56" y1="6.94" x2="15.75" y2="7.75" width="0.4064" layer="16"/>
@@ -2713,7 +2858,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$27">
 <contactref element="IC3" pad="12"/>
-<contactref element="SPEED_SENSOR" pad="1"/>
+<contactref element="SPEED" pad="1"/>
 <wire x1="9.48" y1="6.1465" x2="9.48" y2="4.98" width="0.4064" layer="16"/>
 <wire x1="9.48" y1="4.98" x2="9" y2="4.5" width="0.4064" layer="16"/>
 <wire x1="9" y1="4.5" x2="8.02" y2="4.5" width="0.4064" layer="16"/>
