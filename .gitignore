@@ -7,3 +7,10 @@
 # GEdit Backup Files #
 ######################
 *~
+
+# LT Spice #
+############
+*.log
+*.net
+*.raw
+
