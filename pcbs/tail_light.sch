@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9573,14 +9573,14 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 </class>
 </classes>
 <parts>
-<part name="LED1" library="led" deviceset="LED" device="MINI-TOP"/>
+<part name="LED" library="led" deviceset="LED" device="MINI-TOP"/>
 <part name="D2" library="opto-trans-siemens" deviceset="SFH206" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="con-molex" deviceset="22-?-04" device="27-2041"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="L2" library="inductors" deviceset="DR74" device=""/>
-<part name="U$1" library="ShortCircuitRobotics" deviceset="CAT4201" device="TF"/>
+<part name="CAT4201" library="ShortCircuitRobotics" deviceset="CAT4201" device="TF"/>
 <part name="D3" library="Brunner" deviceset="DIODESCHOTTKY" device="" value="LL5819"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="10u"/>
@@ -9601,7 +9601,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <text x="106.68" y="-15.24" size="1.778" layer="97">~1kHz</text>
 </plain>
 <instances>
-<instance part="LED1" gate="G$1" x="96.52" y="33.02"/>
+<instance part="LED" gate="G$1" x="96.52" y="33.02"/>
 <instance part="D2" gate="1" x="116.84" y="35.56"/>
 <instance part="GND2" gate="1" x="116.84" y="48.26" rot="MR180"/>
 <instance part="J1" gate="-1" x="60.96" y="-5.08"/>
@@ -9611,7 +9611,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <instance part="P+2" gate="VCC" x="45.72" y="-5.08" rot="MR270"/>
 <instance part="GND3" gate="1" x="48.26" y="-15.24" rot="MR90"/>
 <instance part="L2" gate="G$1" x="71.12" y="20.32"/>
-<instance part="U$1" gate="G$1" x="45.72" y="25.4"/>
+<instance part="CAT4201" gate="G$1" x="45.72" y="25.4"/>
 <instance part="D3" gate="G$1" x="60.96" y="27.94" rot="R90"/>
 <instance part="C2" gate="G$1" x="83.82" y="30.48"/>
 <instance part="C1" gate="G$1" x="12.7" y="30.48"/>
@@ -9638,7 +9638,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <junction x="83.82" y="20.32"/>
 <wire x1="83.82" y1="20.32" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="20.32" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED" gate="G$1" pin="C"/>
 <wire x1="96.52" y1="20.32" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <junction x="96.52" y="20.32"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
@@ -9651,7 +9651,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <wire x1="116.84" y1="45.72" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="CAT4201" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9687,7 +9687,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VBAT"/>
+<pinref part="CAT4201" gate="G$1" pin="VBAT"/>
 <wire x1="35.56" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
@@ -9703,7 +9703,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <wire x1="12.7" y1="33.02" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED" gate="G$1" pin="A"/>
 <wire x1="96.52" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9726,7 +9726,7 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SW"/>
+<pinref part="CAT4201" gate="G$1" pin="SW"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
@@ -9739,13 +9739,13 @@ BJT configuration in SOT23 package. MMBT2222 is the common NPN we use. Double ch
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="22.86" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RSET"/>
+<pinref part="CAT4201" gate="G$1" pin="RSET"/>
 <wire x1="22.86" y1="25.4" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CTRL"/>
+<pinref part="CAT4201" gate="G$1" pin="CTRL"/>
 <wire x1="35.56" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="20.32" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="5.08" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
